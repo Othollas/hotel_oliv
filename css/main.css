@@ -19,8 +19,14 @@ html{
 
 body{
     font-size: 1.6rem;
-
     background-color: black;
+}
+
+/* container pour min width */
+
+.container{
+    min-width: 55vh;
+    max-width: 1500px;
 }
 
 /* je crée des classes simples afin de les integrés au mieux */
@@ -49,7 +55,9 @@ body{
 /* Le header et ses class */
 
 header div img{
-     width: 50%;
+     min-width: 20vh;
+     width: 40%;
+     
 }
 
 
@@ -64,28 +72,44 @@ header{
 
 /* le positionning des 2 encart */
 
-.newClient p{
-    color: white;
-    padding: 2.5rem;
-    background-color: rgba(250, 235, 215, 0.634);
-    
-}
-
-
 hr{
     border: 2px solid rgb(184, 129, 66);
 }
 
-.newClient{
+.newCustomer{
+    top: 40%;
+    left: 30%;
+    right: 35%;
+    bottom: 40%;
+    color: white;
+    padding:2rem;
+    background-color: rgba(250, 235, 215, 0.634);
+    text-align: center;
+    font-size: 3rem;
+    
+}
+
+
+.newCustomer hr{
+
+    margin: 2rem 14rem;
+}
+
+.departureCustomer{
     top: 50%;
     left: 30%;
     right: 35%;
+    color: white;
+    background-color: rgba(250, 235, 215, 0.634);
+    padding: 2rem;
+    font-size: 3rem;
+    text-align: center;
 }
 
-div img{
-    width: 100%;
-}
+.departureCustomer hr{
 
+    margin: 2rem 14rem;
+}
 
 
 
@@ -112,16 +136,4 @@ input{
     padding : 1rem;
     margin: 1rem;
     width: 100%;
-    
-}
-
-
-
-.departureClient{
-    top: 50%;
-    left: 45%;
-    right: auto;
-    padding: 2rem;
-    background-color: rgba(222, 184, 135, 0.777);
-    
 }
