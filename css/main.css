@@ -1,0 +1,127 @@
+/* j'enleve les marges de mon cadre */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0px solid blue;
+}
+
+/* je met le font à 62.5% afin de ramener le rem à 10px */
+
+html{
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+}
+
+/* j'initialise le rem à 10 px */
+
+body{
+    font-size: 1.6rem;
+
+    background-color: black;
+}
+
+/* je crée des classes simples afin de les integrés au mieux */
+
+.flex{
+    display: flex;
+}
+
+.aligncenter{
+    align-items: center;
+}
+
+.flexBasis20{
+    flex-basis: 20%;
+    flex: 0.5rem;
+}
+
+.relative{
+    position: relative;
+}
+
+.absolute{
+    position: absolute;
+}
+
+/* Le header et ses class */
+
+header div img{
+     width: 50%;
+}
+
+
+header{
+    padding : 2rem;
+    justify-content: space-between;
+    background-color: rgb(59, 58, 56);
+    flex-basis: auto;
+    
+}
+
+
+/* le positionning des 2 encart */
+
+.newClient p{
+    color: white;
+    padding: 2.5rem;
+    background-color: rgba(250, 235, 215, 0.634);
+    
+}
+
+
+hr{
+    border: 2px solid rgb(184, 129, 66);
+}
+
+.newClient{
+    top: 50%;
+    left: 30%;
+    right: 35%;
+}
+
+div img{
+    width: 100%;
+}
+
+
+
+
+img{
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    padding: 2rem;
+    color: rgb(255, 255, 255);
+}
+
+li{
+    display: inline;
+}
+
+label{
+    color: white;
+    padding: 1rem;
+}
+
+input{
+    padding : 1rem;
+    margin: 1rem;
+    width: 100%;
+    
+}
+
+
+
+.departureClient{
+    top: 50%;
+    left: 45%;
+    right: auto;
+    padding: 2rem;
+    background-color: rgba(222, 184, 135, 0.777);
+    
+}
