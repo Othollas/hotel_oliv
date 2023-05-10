@@ -4,64 +4,62 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    border: 0px solid blue;
+    /* border: 0px solid blue; */
+    text-decoration: none;
 }
 
 /* je met le font à 62.5% afin de ramener le rem à 10px */
 
 html {
     font-size: 62.5%;
-    margin: 0;
-    padding: 0;
-
+    
 }
 
 /* j'initialise le rem à 10 px */
 
 body {
+    margin: 0;
     font-size: 1.6rem;
-    background-color: black;
 }
 
 /* container pour min width */
 
-.container {
-    min-width: 500px;
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 1rem;
+.color{
+    background-color: rgb(59, 58, 56);
+}
 
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+    
+  }
+
+.containerForm {
+  
+  margin: 5rem auto;
+  
 }
 
 /* je crée des classes simples afin de les integrés au mieux */
-#acceuil {
-    background-image: url(../img/Lille-Seminaires.jpg);
-    background-size: cover;
-    padding: 20rem;
-}
 
+img{
+    width: 40%;
+}
 
 .flex {
     display: flex;
 }
 
-.aligncenter {
-    align-items: center;
-}
-
-.flexBasis20 {
-    flex-basis: 20%;
-    flex: 0.5rem;
+.flexcolumn{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 1rem 0;
 }
 
 
 /* Le header et ses class */
-
-header div img {
-    min-width: 20vh;
-    width: 40%;
-
-}
 
 
 header {
@@ -69,63 +67,104 @@ header {
     justify-content: space-between;
     background-color: rgb(59, 58, 56);
     flex-basis: auto;
-
 }
 
 
 /* le positionning des 2 encart */
 
-hr {
-    margin: 2rem 30% 0 30%;
-    border: 2px solid rgb(184, 129, 66);
+.accueil{
+    background-image: url(../img/Lille-Seminaires.jpg);
 }
 
-.newCustomer {
-    text-align: center;
+.goodbye{
+    background-image: url(../img/Lille-Hall.jpg);
 }
 
-.presentation {
-    font-size: 2rem;
-    padding: 2rem;
-    background-color: rgba(250, 235, 215, 0.634);
-}
-
-
-.departureCustomer {
-    padding: 20rem;
-    background-image: url(/img/Lille-Hall.jpg);
+.bg {
     background-size: cover;
-    background-color: rgba(250, 235, 215, 0.634);
-
+    width: 100%;
+    background-position: center;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
+
+.presentation{
+    background-color:rgba(80, 51, 51, 0.676);
+    color: white;
+    display: inline-block;
+    padding: 2rem;
+}
+
+hr{
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+/* LEs formulaires */
+
+fieldset{
+    border: 0;
+    
+}
+
+legend{
+    color: white;
+}
+
+
+
 
 select{
     padding: 0.5rem;
     background-color: white;
-    margin: 2rem;
 }
 
-img {
-    width: 100%;
-}
 
 a {
-    text-decoration: none;
-    padding: 2rem;
-    color: rgb(255, 255, 255);
+    
+    padding: 0.5rem;
+    color: rgb(0, 0, 0);
 }
 
-li {
-    display: inline;
-}
+
 
 label {
     color: white;
-    padding: 1rem;
+    padding: 1rem 0;
 }
 
 input {
-    padding: 1rem;
-    margin: 1rem;
-    width: 100%;
+    padding: 0.5rem 0;
+    margin: 0.5rem 0;
 }
+
+form{
+    margin: 5rem 0;
+    background-color: black;
+    color: white;
+    padding: 2rem;
+}
+
+
+.btn{
+    border: 1px solid white;
+    background-color: bisque;
+    justify-content: center;
+}
+
+@media screen and (min-width: 991px) {
+    .containerForm {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .flexcolumn{
+        flex-basis: 12%;
+        margin: 0 2rem;
+    }
+
+  }

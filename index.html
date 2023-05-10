@@ -10,106 +10,109 @@
 </head>
 
 <body>
-    <div class="container">
-        <header class="flex aligncenter">
-
-            <div class="flex aligncenter flexBasis20">
-                <img class="" src="img/Logoblanc.png" alt="">
-            </div>
-
+    <header class="color">
+        <div class="flex container">
+            <img src="img/Logoblanc.png" alt="">
             <div class="flex">
                 <ul>
-                    <li><a href="#acceuil">Entrez client</a></li>
-                    <li><a href="#goodbye">Sortie client</a></li>
+                    <li><a href="#top">Entrez client</a></li>
+                    <li><a href="#bot">Sortie client</a></li>
                 </ul>
             </div>
-
-        </header>
-
-        <main>
-            <section id="acceuil">
-                <div class="container newCustomer">
-                    <div class="presentation">
-                        <p><a href="#newCustomer">Accueil nouveau client</a>
-                        </p>
-                        <hr>
-                    </div>
-                </div>
-            </section>
-
-            <form action="" class="">
-
-                <div>
-                    <label for="">Entrez votre prenom :
-                        <input type="text">
-                    </label>
-                </div>
-
-                <div>
-                    <label for="">Entrez votre nom :
-                        <input type="text">
-                    </label>
-                </div>
-
-                <div>
-                    <label for="">Entrez le nombre de personnes :
-                        <input type="number" name="" id="" min="1">
-                    </label>
-                </div>
-
-                <div class>
-                    <label for="">Chambre :
-                        <select name="" id="">
-                            <option value="Chambre1">Chambre 1 personne</option>
-                            <option value="Chambre2">Chambre 2 personnes</option>
-                            <option value="Chambre4">Chambre 4 personnes</option>
-                            <option value="Loft">Loft</option>
-                        </select>
-                    </label>
-                </div>
-
-                <div class="flex flexstart">
-                    <label for="">Petit dejeuné ?
-                        <div>
-                            <input type="radio" name="Breakfast" id="">oui
-                            <input type="radio" name="Breakfast" id="">non
-                        </div>
-                    </label>
-                </div>
-
-                <div>
-                    <a href="">demander votre ticket <i>icone</i></a>
-                </div>
-            </form>
-
-            <section id="goodbye">
-                <div class="absolute departureCustomer">
-                    <p><a href="departureCustomer">Départ client</a></p>
-                    <hr>
-                </div>
-            </section>
+        </div>
+    </header>
 
 
-            <form action="">
+    <section id="top">
+        <div class="accueil bg">
+            <div class="presentation">
+                <h2>Accueil Nouveau</h2>
+                <hr>
+            </div>
+        </div>
 
-                <div>
-                    <label for="">Entrez votre prenom :
-                        <input type="text">
-                    </label>
-                </div>
+        <form action="" class="containerForm ">
 
-                <div>
-                    <label for="">Entrez votre nom :
-                        <input type="text">
-                    </label>
-            </form>
+            <div class="flexcolumn">
+                <label for="fname">Entrez votre prenom :</label>
+                <input id="fname" type="text">
+            </div>
 
-        </main>
+            <div class="flexcolumn ">
+                <label for="lname">Entrez votre nom :</label>
+                <input id="lname" type="text">
+            </div>
 
-        <footer>
-            <div></div>
-        </footer>
-    </div>
+            <div class="flexcolumn">
+                <label for="night">Entrez le nombre de nuits :</label>
+                <input type="number" name="night" id="nbNight" min="1">
+            </div>
+
+            <div class="flexcolumn">
+                <label for="typeRoom">Chambre :</label>
+                <select name="typeRoom" id="typeRoom">
+                    <option value="Chambre1">Chambre 1 personne</option>
+                    <option value="Chambre2">Chambre 2 personnes</option>
+                    <option value="Chambre4">Chambre 4 personnes</option>
+                    <option value="Loft">Loft</option>
+                </select>
+            </div>
+
+            <!-- <label for="breakfast">Petit dejeuné ?</label>
+        <div class="flexcolumn">
+            <div>
+            <input type="radio" name="Breakfast" id="yes">oui
+            <input type="radio" name="Breakfast" id="no">non
+            </div>
+        </div> -->
+
+
+            <div class="flexcolumn">
+                <fieldset>
+                    <legend>Petit dejeuné ?</legend>
+                    <input type="radio" name="Breakfast" id="yes" value="yes">
+                    <label for="yes">oui</label>
+                    <input type="radio" name="Breakfast" id="no" value="no">
+                    <label for="no">non</label>
+                </fieldset>
+            </div>
+
+            <div class="flex btn">
+                <a href="">demander votre ticket <i>icone</i></a>
+            </div>
+        </form>
+    </section>
+    <section id="bot">
+
+
+        <div class="goodbye bg">
+            <div class="presentation">
+                <h2>Départ client</h2>
+                <hr>
+            </div>
+        </div>
+
+
+        <form action="" class="containerForm">
+            <div class="flexcolumn">
+                <label for="fname">Entrez votre prenom :</label>
+                <input id="fname" type="text">
+            </div>
+
+            <div class="flexcolumn">
+                <label for="lname">Entrez votre nom :</label>
+                <input id="lname" type="text">
+            </div>
+            <div class="flex btn">
+                <a href="">demander votre ticket <i>icone</i></a>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <div></div>
+    </footer>
+
 </body>
 
 </html>
