@@ -4,7 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    border: 0px solid blue;
+    border: 2px solid blue;
 }
 
 /* je met le font à 62.5% afin de ramener le rem à 10px */
@@ -40,7 +40,7 @@ body{
 }
 
 .flexBasis20{
-    flex-basis: 20%;
+    flex-basis: 15%;
     flex: 0.5rem;
 }
 
@@ -81,7 +81,7 @@ hr{
     left: 30%;
     right: 35%;
     bottom: 40%;
-    color: white;
+    color: rgb(255, 8, 8);
     padding:2rem;
     background-color: rgba(250, 235, 215, 0.634);
     text-align: center;
@@ -141,11 +141,14 @@ input{
 }
 
 .breakfast{
-    width: 20rem;
+    width: 40rem;
     text-align: center;
     align-items: center;
+    font-size: 2rem;
 }
 
 .sendTicket{
     display: flex;
+    justify-content: center;
 }
+
