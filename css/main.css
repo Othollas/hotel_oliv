@@ -133,7 +133,19 @@ label{
 }
 
 input{
-    padding : 1rem;
+    
+    border-radius: 25px;
+    padding : 0.5rem 1rem;
     margin: 1rem;
-    width: 100%;
+    width: 50%;
+}
+
+.breakfast{
+    width: 20rem;
+    text-align: center;
+    align-items: center;
+}
+
+.sendTicket{
+    display: flex;
 }
